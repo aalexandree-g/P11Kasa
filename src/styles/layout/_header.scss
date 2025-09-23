@@ -1,15 +1,9 @@
-.navbar-container {
-  width: 100%;
-  background-color: $background-color;
-}
-
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   max-width: 1240px;
   margin: 0 auto;
-  background-color: $background-color;
   &__logo img {
     height: 68px;
   }

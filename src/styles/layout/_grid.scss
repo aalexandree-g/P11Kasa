@@ -1,0 +1,19 @@
+.grid {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, auto);
+  gap: 2vw;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+}
+
+.grid-container {
+  max-width: 1240px;
+  margin: 0 20px;
+  padding: 50px 20px;
+  border-radius: 25px;
+  background-color: $surface-color;
+}

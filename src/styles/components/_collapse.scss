@@ -1,0 +1,49 @@
+.collapse-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 52px;
+  max-width: 1023px;
+  margin: 0 auto;
+  padding: 0px 20px 0px;
+  border-radius: 5px;
+  color: $background-color;
+  background-color: $primary-color;
+
+  &__title,
+  &__icon {
+    font-size: 24px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 250ms ease;
+    &.open {
+      transform: rotate(-180deg);
+    }
+  }
+
+  &__panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 300ms ease;
+    &.open {
+      max-height: 200px;
+    }
+  }
+
+  &__text {
+    max-width: 1023px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: $surface-color;
+    border-radius: 0 0 5px 5px;
+    font-weight: 300;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+}
+
+.collapse-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}

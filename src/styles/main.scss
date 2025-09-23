@@ -1,11 +1,15 @@
+// variables
 @import './abstracts/variables';
 
 // layout
 @import './layout/header';
 @import './layout/footer';
+@import './components/card';
+@import './layout/grid';
 
 // components
-@import './components/landscape';
+@import './components/banner';
+@import './components/collapse';
 
 body {
   margin: 0 auto;
@@ -14,24 +18,24 @@ body {
   font-weight: 500;
 }
 
-#layout {
-  padding-top: 45px;
+.main {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  min-height: 100vh;
+  gap: 50px;
+  margin-top: 45px;
   background-color: $background-color;
 }
 
 .background {
   width: 100%;
   background-color: $background-color;
-}
-
-.container {
   max-width: 1240px;
   margin: 0 auto;
 }
 
-.grid-container {
-  width: 100%;
-  height: 300px;
-  border-radius: 25px;
-  background-color: $surface-color;
+.content {
+  flex: 1;
+  margin-left: 20px;
+  margin-right: 20px;
 }

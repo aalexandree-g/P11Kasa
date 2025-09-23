@@ -3,8 +3,8 @@ import logo from '../assets/logo.png'
 
 export default function Header() {
   return (
-    <header className="navbar-container">
-      <nav className="navbar">
+    <header className="background">
+      <nav className="content navbar">
         <div className="navbar__logo">
           <img src={logo} alt="Logo du site" />
         </div>
@@ -17,7 +17,6 @@ export default function Header() {
           >
             Accueil
           </NavLink>
-
           <NavLink
             to="/about"
             className={({ isActive }) =>

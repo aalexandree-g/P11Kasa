@@ -8,15 +8,11 @@ import Accomodation from './pages/Accomodation'
 
 export default function App() {
   return (
-    <div id="layout">
-      <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/accomodation" element={<Accomodation />} />
-        <Route path="*" element={<Error />} />
-      </Routes>
-      <Footer />
-    </div>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/accomodation" element={<Accomodation />} />
+      <Route path="*" element={<Error />} />
+    </Routes>
   )
 }
