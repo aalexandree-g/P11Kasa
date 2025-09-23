@@ -1,5 +1,5 @@
 import Card from './Card'
-import logements from '../data/logements.json'
+import logements from '../../../data/logements.json'
 
 export default function Grid() {
   return (

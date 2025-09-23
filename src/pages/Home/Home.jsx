@@ -1,8 +1,8 @@
-import Header from '../components/Header'
-import Footer from '../components/Footer'
-import Grid from '../components/Grid'
-import Banner from '../components/Banner'
-import landscape from '../assets/landscape1.png'
+import Header from '../../components/layout/Header'
+import Footer from '../../components/layout/Footer'
+import Grid from '../../pages/Home/components/Grid'
+import Banner from '../../components/ui/Banner'
+import landscape from '../../assets/landscape1.png'
 
 export default function Home() {
   return (

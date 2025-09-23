@@ -1,8 +1,8 @@
-import Header from '../components/Header'
-import Footer from '../components/Footer'
-import Banner from '../components/Banner'
-import landscape from '../assets/landscape2.png'
-import Collapse from '../components/Collapse'
+import Header from '../../components/layout/Header'
+import Footer from '../../components/layout/Footer'
+import Banner from '../../components/ui/Banner'
+import landscape from '../../assets/landscape2.png'
+import Collapse from '../../components/ui/Collapse'
 
 export default function About() {
   return (
