@@ -7,8 +7,10 @@ import landscape from '../assets/landscape1.png'
 export default function Home() {
   return (
     <div className="main">
-      <Header />
-      <Banner src={landscape} text={'Chez vous, partout et ailleurs'} />
+      <div className="headAndContent">
+        <Header />
+        <Banner src={landscape} text={'Chez vous, partout et ailleurs'} />
+      </div>
       <Grid />
       <Footer />
     </div>

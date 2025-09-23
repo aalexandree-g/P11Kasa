@@ -6,6 +6,7 @@
 @import './layout/footer';
 @import './components/card';
 @import './layout/grid';
+@import './layout/error';
 
 // components
 @import './components/banner';
@@ -19,12 +20,19 @@ body {
 }
 
 .main {
-  display: grid;
-  grid-template-rows: auto auto auto;
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
+  justify-content: space-between;
   gap: 50px;
   margin-top: 45px;
   background-color: $background-color;
+}
+
+.headAndContent {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
 }
 
 .background {
@@ -35,7 +43,6 @@ body {
 }
 
 .content {
-  flex: 1;
   margin-left: 20px;
   margin-right: 20px;
 }
