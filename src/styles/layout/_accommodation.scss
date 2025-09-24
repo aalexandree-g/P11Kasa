@@ -1,0 +1,19 @@
+.accommodation-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.accommodation {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 auto 10px;
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+}

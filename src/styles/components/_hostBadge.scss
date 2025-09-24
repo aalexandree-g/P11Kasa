@@ -1,0 +1,17 @@
+.host-badge {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  &__name {
+    text-align: right;
+    color: $primary-color;
+  }
+
+  &__picture {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+}

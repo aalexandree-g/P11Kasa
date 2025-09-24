@@ -5,19 +5,15 @@
   height: 25px;
   padding: 0px 30px;
   border-radius: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  color: $background-color;
   background-color: $primary-color;
-
-  &__text {
-    font-size: 14px;
-    font-weight: 700;
-    color: $background-color;
-  }
 }
 
 .tag-list {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 10px;
-  background-color: $surface-color;
-  padding: 100px 20px;
+  padding-top: 10px;
 }

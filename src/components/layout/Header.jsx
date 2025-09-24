@@ -25,14 +25,6 @@ export default function Header() {
           >
             À propos
           </NavLink>
-          <NavLink
-            to="/accommodation"
-            className={({ isActive }) =>
-              isActive ? 'navbar__link navbar__link--active' : 'navbar__link'
-            }
-          >
-            Logement
-          </NavLink>
         </div>
       </nav>
     </header>

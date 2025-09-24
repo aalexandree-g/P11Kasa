@@ -47,3 +47,21 @@
   flex-direction: column;
   gap: 30px;
 }
+
+.collapses {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 76px;
+  width: 100%;
+  list-style: none;
+
+  .content {
+    margin: 0;
+  }
+
+  .collapse-container {
+    &__title {
+      font-size: 18px;
+    }
+  }
+}

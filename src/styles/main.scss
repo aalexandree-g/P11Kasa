@@ -4,14 +4,19 @@
 // layout
 @import './layout/header';
 @import './layout/footer';
-@import './components/card';
 @import './layout/grid';
 @import './layout/error';
+@import './layout/accommodation';
+@import './layout/accommodationHeader';
 
 // components
 @import './components/banner';
+@import './components/card';
 @import './components/collapse';
+@import './components/slideshow';
 @import './components/tag';
+@import './components/hostBadge';
+@import './components/ratingStars';
 
 body {
   margin: 0 auto;

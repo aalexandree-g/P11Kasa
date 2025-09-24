@@ -1,0 +1,17 @@
+.accommodation-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+
+  &__title {
+    color: $primary-color;
+    margin: 0;
+    font-size: 36px;
+    font-weight: 500;
+  }
+
+  &__location {
+    margin: 0;
+  }
+}
