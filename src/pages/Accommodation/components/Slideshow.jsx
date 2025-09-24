@@ -7,19 +7,29 @@ import {
 
 export default function Slideshow({ images = [] }) {
   const [currentIndex, setCurrentIndex] = useState(0)
+  const [direction, setDirection] = useState('')
   const len = images && images.length ? images.length : 0
   if (!len) return null
 
-  const handleNext = () => setCurrentIndex((i) => (i + 1) % len)
-  const handlePrev = () => setCurrentIndex((i) => (i - 1 + len) % len)
+  const handlePrev = () => {
+    setDirection('left')
+    setCurrentIndex((i) => (i - 1 + len) % len)
+  }
+  const handleNext = () => {
+    setDirection('right')
+    setCurrentIndex((i) => (i + 1) % len)
+  }
 
   return (
     <div className="slideshow">
-      <img
-        src={images[currentIndex]}
-        alt={`Photo du logement - ${currentIndex + 1}`}
-        className="slideshow__image"
-      />
+      <div className="slideshow__stage">
+        <img
+          key={currentIndex}
+          src={images[currentIndex]}
+          alt={`Photo du logement - ${currentIndex + 1}`}
+          className={`slideshow__image slideshow__image--${direction}`}
+        />
+      </div>
       {len > 1 && (
         <>
           <button

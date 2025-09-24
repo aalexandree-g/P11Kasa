@@ -22,7 +22,7 @@ export default function Accommodation() {
         <Header />
         <section className="background">
           <div className="content accommodation-content">
-            <Slideshow images={logement.pictures} altBase={logement.title} />
+            <Slideshow images={logement.pictures} />
             <div className="accommodation">
               <div className="accommodation__left">
                 <AccommodationHeader
