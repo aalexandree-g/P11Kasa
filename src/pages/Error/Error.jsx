@@ -4,8 +4,8 @@ import Footer from '../../components/layout/Footer'
 
 export default function Error() {
   return (
-    <div className="main">
-      <div className="headAndContent">
+    <div className="error-main">
+      <div className="error-headAndContent">
         <Header />
         <div className="error">
           <span className="error__number">404</span>

@@ -10,10 +10,21 @@
   width: 100%;
   margin: 0 auto 10px;
 
+  @media (max-width: 768px) {
+    flex-direction: column;
+    margin-bottom: 0;
+    gap: 20px;
+  }
+
   &__right {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-end;
+
+    @media (max-width: 768px) {
+      flex-direction: row-reverse;
+      align-items: center;
+    }
   }
 }

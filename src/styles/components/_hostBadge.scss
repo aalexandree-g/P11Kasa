@@ -6,6 +6,11 @@
   &__name {
     text-align: right;
     color: $primary-color;
+
+    @media (max-width: 768px) {
+      font-size: 12px;
+      margin: 0;
+    }
   }
 
   &__picture {
@@ -13,5 +18,10 @@
     height: 64px;
     border-radius: 50%;
     object-fit: cover;
+
+    @media (max-width: 768px) {
+      width: 32px;
+      height: 32px;
+    }
   }
 }

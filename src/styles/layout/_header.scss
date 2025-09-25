@@ -4,19 +4,40 @@
   align-items: center;
   max-width: 1240px;
   margin: 0 auto;
+
   &__logo img {
     height: 68px;
+
+    @media (max-width: 768px) {
+      height: 46px;
+    }
   }
+
   &__links {
     display: flex;
     gap: 57px;
+
+    @media (max-width: 768px) {
+      gap: 26px;
+    }
   }
+
   &__link {
     font-size: 24px;
     text-decoration: none;
     color: $secondary-color;
+
     &--active {
       border-bottom: 2px solid $secondary-color;
+
+      @media (max-width: 768px) {
+        border-bottom: 1px solid $secondary-color;
+      }
+    }
+
+    @media (max-width: 768px) {
+      font-size: 12px;
+      text-transform: uppercase;
     }
   }
 }

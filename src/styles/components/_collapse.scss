@@ -10,12 +10,21 @@
   color: $background-color;
   background-color: $primary-color;
 
+  @media (max-width: 768px) {
+    height: 30px;
+  }
+
   &__title,
   &__icon {
     font-size: 24px;
     font-weight: 700;
     cursor: pointer;
     transition: transform 250ms ease;
+
+    @media (max-width: 768px) {
+      font-size: 16px;
+    }
+
     &.open {
       transform: rotate(-180deg);
     }
@@ -39,6 +48,10 @@
     font-weight: 300;
     text-align: justify;
     text-justify: inter-word;
+
+    @media (max-width: 768px) {
+      font-size: 12px;
+    }
   }
 }
 
@@ -46,6 +59,10 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
+
+  @media (max-width: 768px) {
+    gap: 19px;
+  }
 }
 
 .collapses {
@@ -55,6 +72,11 @@
   width: 100%;
   list-style: none;
 
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
   .content {
     margin: 0;
   }
@@ -62,6 +84,10 @@
   .collapse-container {
     &__title {
       font-size: 18px;
+
+      @media (max-width: 768px) {
+        font-size: 13px;
+      }
     }
   }
 }
