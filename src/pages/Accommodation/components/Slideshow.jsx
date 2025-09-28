@@ -11,6 +11,9 @@ export default function Slideshow({ images = [] }) {
   const len = images && images.length ? images.length : 0
   if (!len) return null
 
+  {
+    /* go to previous or next picture */
+  }
   const handlePrev = () => {
     setDirection('left')
     setCurrentIndex((i) => (i - 1 + len) % len)
@@ -30,6 +33,8 @@ export default function Slideshow({ images = [] }) {
           className={`slideshow__image slideshow__image--${direction}`}
         />
       </div>
+
+      {/* show only if images.length > 1 */}
       {len > 1 && (
         <>
           <button
